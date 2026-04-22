@@ -1,0 +1,175 @@
+[
+  {
+    "id": 1,
+    "slug": "stillness-layers",
+    "year": "2026",
+    "role": {
+      "ja": "アートディレクション / 撮影",
+      "en": "Art Direction / Photography",
+      "zh": "艺术指导 / 摄影"
+    },
+    "title": {
+      "ja": "静寂の層",
+      "en": "Layers of Stillness",
+      "zh": "静寂层叠"
+    },
+    "category": {
+      "ja": "建築写真",
+      "en": "Architecture",
+      "zh": "建筑摄影"
+    },
+    "excerpt": {
+      "ja": "都市の静けさを、光の段差と余白で記録したシリーズ。",
+      "en": "A series capturing urban silence through layered light and negative space.",
+      "zh": "以光线层次与留白记录城市静默的一组影像。"
+    },
+    "description": {
+      "ja": [
+        "本案件では、商業施設の改修タイミングに合わせて、空間の新しい呼吸を写真として再設計しました。",
+        "撮影前に導線を再構築し、来訪者の視線が止まるポイントを優先して構図を決定。暗部の情報を残しながら、白の階調を丁寧に管理しています。"
+      ],
+      "en": [
+        "This project reframed a renovated commercial space as a visual narrative of calm.",
+        "Before shooting, we mapped visitor flow and prioritized pause points in composition. We preserved dark detail while carefully controlling white gradation."
+      ],
+      "zh": [
+        "本项目结合商业空间改造节点，把场所的“新呼吸”重新组织为影像叙事。",
+        "拍摄前先重建动线，以观者停留点为优先确定构图；在保留暗部层次的同时，精细控制高光过渡。"
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1508919893251-173f14f41dec",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
+      "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8"
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "urban-margin",
+    "year": "2025",
+    "role": {
+      "ja": "コンセプト設計 / 編集",
+      "en": "Concept / Editorial",
+      "zh": "概念设计 / 编辑"
+    },
+    "title": {
+      "ja": "都市の余白",
+      "en": "Urban Margin",
+      "zh": "城市留白"
+    },
+    "category": {
+      "ja": "エディトリアル",
+      "en": "Editorial",
+      "zh": "编辑影像"
+    },
+    "excerpt": {
+      "ja": "密度の高い都市に、視覚的な呼吸をつくる実験。",
+      "en": "An editorial study introducing visual breathing room into dense urban scenes.",
+      "zh": "在高密度城市语境中建立视觉呼吸感的编辑实验。"
+    },
+    "description": {
+      "ja": [
+        "連続する縦構図を基調に、建築の輪郭だけを残すトリミングを採用。",
+        "誌面展開を前提に、見開きでのリズムを意識した順序で制作しています。"
+      ],
+      "en": [
+        "Built around a sequence of vertical frames, this series keeps only structural outlines.",
+        "The image order was designed for spread-based pacing in editorial layouts."
+      ],
+      "zh": [
+        "项目以连续纵向构图为主，采用仅保留建筑轮廓的裁切策略。",
+        "整体顺序按跨页阅读节奏编排，优先保证画面之间的呼吸与停顿。"
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85",
+      "https://images.unsplash.com/photo-1518005020250-58003994ec3b",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750"
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "light-sculpture",
+    "year": "2024",
+    "role": {
+      "ja": "照明設計 / レタッチ",
+      "en": "Lighting / Retouch",
+      "zh": "灯光设计 / 后期"
+    },
+    "title": {
+      "ja": "光の彫刻",
+      "en": "Sculpting Light",
+      "zh": "光之雕塑"
+    },
+    "category": {
+      "ja": "プロダクト",
+      "en": "Product",
+      "zh": "产品影像"
+    },
+    "excerpt": {
+      "ja": "素材感を壊さずに、光の立体感だけを強調した撮影。",
+      "en": "A product shoot emphasizing volumetric light while preserving material texture.",
+      "zh": "在不破坏材质质感的前提下，强化光线体积感的产品拍摄。"
+    },
+    "description": {
+      "ja": [
+        "光源を複数レイヤーで制御し、金属とガラスの反射を分離して収録。"
+      ],
+      "en": [
+        "We controlled multi-layered light to separate metal and glass reflections."
+      ],
+      "zh": [
+        "我们以多层级布光控制反射，让金属与玻璃的高光信息被独立记录。"
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4",
+      "https://images.unsplash.com/photo-1534237711011-41c19b2a759b",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c"
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "echoed-void",
+    "year": "2023",
+    "role": {
+      "ja": "撮影 / 映像編集",
+      "en": "Photography / Motion Edit",
+      "zh": "摄影 / 影像剪辑"
+    },
+    "title": {
+      "ja": "反響する空白",
+      "en": "Echoed Void",
+      "zh": "回响的留白"
+    },
+    "category": {
+      "ja": "空間記録",
+      "en": "Spatial Study",
+      "zh": "空间记录"
+    },
+    "excerpt": {
+      "ja": "音が消える瞬間を、視覚のグラデーションとして翻訳。",
+      "en": "Translating the moment sound vanishes into a visual gradient.",
+      "zh": "把声音消失的瞬间，翻译成可被观看的视觉渐变。"
+    },
+    "description": {
+      "ja": [
+        "同一空間を時間帯ごとに撮影し、温度差と色温度の変化を比較。",
+        "静止画と短尺映像を組み合わせ、鑑賞のテンポを設計しました。"
+      ],
+      "en": [
+        "The same space was captured across time windows to compare tonal shifts.",
+        "Stills and short-form motion were paired to control viewing tempo."
+      ],
+      "zh": [
+        "我们在同一空间的不同时段持续拍摄，对比色温与环境温度带来的层次差异。",
+        "通过静帧与短视频的并置，控制观者的观看节奏与停留时长。"
+      ]
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1516939884455-1445c8652f83",
+      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e",
+      "https://images.unsplash.com/photo-1449156003053-c30670b96835"
+    ]
+  }
+]
