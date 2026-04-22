@@ -1,0 +1,44 @@
+{
+  "ja": {
+    "siteName": "HAS.WORKS",
+    "nav": ["作品一覧", "プロフィール", "コンタクト"],
+    "homeTitle": "写真と空間のアーカイブ",
+    "homeSubtitle": "各カードを選択すると、制作背景・複数ビジュアル・詳細解説を確認できます。",
+    "openProject": "詳細を見る",
+    "backToHome": "一覧に戻る",
+    "previousProject": "前のプロジェクト",
+    "nextProject": "次のプロジェクト",
+    "projectOverview": "プロジェクト概要",
+    "projectGallery": "ギャラリー",
+    "seoHomeTitle": "HAS.WORKS | 作品一覧",
+    "seoHomeDescription": "HAS.WORKSの写真・空間表現プロジェクト一覧。各事例の背景、プロセス、成果を日本語・英語・中文で閲覧できます。"
+  },
+  "en": {
+    "siteName": "HAS.WORKS",
+    "nav": ["Works", "Profile", "Contact"],
+    "homeTitle": "Photography & Spatial Archive",
+    "homeSubtitle": "Open any card to view context, multi-image gallery, and detailed project notes.",
+    "openProject": "View Details",
+    "backToHome": "Back to Works",
+    "previousProject": "Previous Project",
+    "nextProject": "Next Project",
+    "projectOverview": "Project Overview",
+    "projectGallery": "Gallery",
+    "seoHomeTitle": "HAS.WORKS | Works",
+    "seoHomeDescription": "Portfolio of photography and spatial projects by HAS.WORKS with process notes, results, and multilingual details."
+  },
+  "zh": {
+    "siteName": "HAS.WORKS",
+    "nav": ["作品列表", "个人简介", "联系合作"],
+    "homeTitle": "摄影与空间档案",
+    "homeSubtitle": "点击任意卡片即可查看项目背景、图像组与详细说明。",
+    "openProject": "查看详情",
+    "backToHome": "返回列表",
+    "previousProject": "上一个项目",
+    "nextProject": "下一个项目",
+    "projectOverview": "项目概述",
+    "projectGallery": "项目画廊",
+    "seoHomeTitle": "HAS.WORKS | 作品列表",
+    "seoHomeDescription": "HAS.WORKS 摄影与空间项目作品集，支持日语、英语与中文浏览。"
+  }
+}
