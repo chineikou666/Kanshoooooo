@@ -19,28 +19,28 @@
       "zh": "建筑摄影"
     },
     "excerpt": {
-      "ja": "都市の静けさを、光の段差と余白で記録したシリーズ。",
-      "en": "A series capturing urban silence through layered light and negative space.",
-      "zh": "以光线层次与留白记录城市静默的一组影像。"
+      "ja": "都市空間の余白と光の段差を、静かな連続として再構成したシリーズ。",
+      "en": "A sequence rebuilding urban stillness through layered light and negative space.",
+      "zh": "以光线层次与留白重组城市静默感的系列。"
     },
     "description": {
       "ja": [
-        "本案件では、商業施設の改修タイミングに合わせて、空間の新しい呼吸を写真として再設計しました。",
-        "撮影前に導線を再構築し、来訪者の視線が止まるポイントを優先して構図を決定。暗部の情報を残しながら、白の階調を丁寧に管理しています。"
+        "改修直後の商業空間を、視線の停留点を起点に再編集しました。",
+        "暗部情報を保ちながら、白の階調を丁寧に設計しています。"
       ],
       "en": [
-        "This project reframed a renovated commercial space as a visual narrative of calm.",
-        "Before shooting, we mapped visitor flow and prioritized pause points in composition. We preserved dark detail while carefully controlling white gradation."
+        "This project reframed a renovated commercial space into a calm visual narrative.",
+        "We preserved shadow detail while controlling white gradation with precision."
       ],
       "zh": [
-        "本项目结合商业空间改造节点，把场所的“新呼吸”重新组织为影像叙事。",
-        "拍摄前先重建动线，以观者停留点为优先确定构图；在保留暗部层次的同时，精细控制高光过渡。"
+        "本项目围绕观者停留点重构改造后的商业空间叙事。",
+        "在保留暗部层次的同时，精细控制高光过渡。"
       ]
     },
     "images": [
-      "https://images.unsplash.com/photo-1508919893251-173f14f41dec",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
-      "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8"
+      "https://picsum.photos/seed/stillness-layers-1/2000/2600",
+      "https://picsum.photos/seed/stillness-layers-2/2000/2600",
+      "https://picsum.photos/seed/stillness-layers-3/2000/2600"
     ]
   },
   {
@@ -48,7 +48,7 @@
     "slug": "urban-margin",
     "year": "2025",
     "role": {
-      "ja": "コンセプト設計 / 編集",
+      "ja": "コンセプト / 編集",
       "en": "Concept / Editorial",
       "zh": "概念设计 / 编辑"
     },
@@ -63,28 +63,28 @@
       "zh": "编辑影像"
     },
     "excerpt": {
-      "ja": "密度の高い都市に、視覚的な呼吸をつくる実験。",
-      "en": "An editorial study introducing visual breathing room into dense urban scenes.",
-      "zh": "在高密度城市语境中建立视觉呼吸感的编辑实验。"
+      "ja": "高密度な街並みに、呼吸できる視覚の間をつくる試み。",
+      "en": "An editorial study introducing visual breathing room into dense streets.",
+      "zh": "在高密度城市场景中建立可呼吸的视觉间距。"
     },
     "description": {
       "ja": [
-        "連続する縦構図を基調に、建築の輪郭だけを残すトリミングを採用。",
-        "誌面展開を前提に、見開きでのリズムを意識した順序で制作しています。"
+        "縦構図を連続させ、建築の輪郭だけを残すトリミングで構成。",
+        "誌面での展開を前提に、見開きリズムで順序設計しました。"
       ],
       "en": [
-        "Built around a sequence of vertical frames, this series keeps only structural outlines.",
-        "The image order was designed for spread-based pacing in editorial layouts."
+        "Built on vertical sequences, the series keeps only architectural outlines.",
+        "The order was tuned for spread-based pacing in editorial layouts."
       ],
       "zh": [
-        "项目以连续纵向构图为主，采用仅保留建筑轮廓的裁切策略。",
-        "整体顺序按跨页阅读节奏编排，优先保证画面之间的呼吸与停顿。"
+        "以连续纵向构图组织画面，仅保留建筑轮廓信息。",
+        "按跨页阅读节奏编排顺序，保证视觉呼吸感。"
       ]
     },
     "images": [
-      "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85",
-      "https://images.unsplash.com/photo-1518005020250-58003994ec3b",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750"
+      "https://picsum.photos/seed/urban-margin-1/2000/2600",
+      "https://picsum.photos/seed/urban-margin-2/2000/2600",
+      "https://picsum.photos/seed/urban-margin-3/2000/2600"
     ]
   },
   {
@@ -99,7 +99,7 @@
     "title": {
       "ja": "光の彫刻",
       "en": "Sculpting Light",
-      "zh": "光之雕塑"
+      "zh": "光之雕刻"
     },
     "category": {
       "ja": "プロダクト",
@@ -107,25 +107,28 @@
       "zh": "产品影像"
     },
     "excerpt": {
-      "ja": "素材感を壊さずに、光の立体感だけを強調した撮影。",
-      "en": "A product shoot emphasizing volumetric light while preserving material texture.",
-      "zh": "在不破坏材质质感的前提下，强化光线体积感的产品拍摄。"
+      "ja": "素材感を損なわず、立体的な光だけを前に出したプロダクト撮影。",
+      "en": "A product shoot emphasizing volumetric light while preserving textures.",
+      "zh": "在保留材质质感前提下强化光线体积感。"
     },
     "description": {
       "ja": [
-        "光源を複数レイヤーで制御し、金属とガラスの反射を分離して収録。"
+        "複数レイヤーの光を制御し、金属とガラスの反射を分離。",
+        "仕上げではトーンを最小限に整え、質感再現を優先しました。"
       ],
       "en": [
-        "We controlled multi-layered light to separate metal and glass reflections."
+        "Multi-layer lighting separated reflections on metal and glass.",
+        "Final grading stayed minimal to prioritize material fidelity."
       ],
       "zh": [
-        "我们以多层级布光控制反射，让金属与玻璃的高光信息被独立记录。"
+        "通过多层布光将金属与玻璃反射信息解耦。",
+        "后期仅做最小化调整，优先保证材质还原。"
       ]
     },
     "images": [
-      "https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4",
-      "https://images.unsplash.com/photo-1534237711011-41c19b2a759b",
-      "https://images.unsplash.com/photo-1497366216548-37526070297c"
+      "https://picsum.photos/seed/light-sculpture-1/2000/2600",
+      "https://picsum.photos/seed/light-sculpture-2/2000/2600",
+      "https://picsum.photos/seed/light-sculpture-3/2000/2600"
     ]
   },
   {
@@ -133,14 +136,14 @@
     "slug": "echoed-void",
     "year": "2023",
     "role": {
-      "ja": "撮影 / 映像編集",
+      "ja": "撮影 / モーション編集",
       "en": "Photography / Motion Edit",
-      "zh": "摄影 / 影像剪辑"
+      "zh": "摄影 / 动态剪辑"
     },
     "title": {
       "ja": "反響する空白",
       "en": "Echoed Void",
-      "zh": "回响的留白"
+      "zh": "回响留白"
     },
     "category": {
       "ja": "空間記録",
@@ -148,28 +151,380 @@
       "zh": "空间记录"
     },
     "excerpt": {
-      "ja": "音が消える瞬間を、視覚のグラデーションとして翻訳。",
-      "en": "Translating the moment sound vanishes into a visual gradient.",
-      "zh": "把声音消失的瞬间，翻译成可被观看的视觉渐变。"
+      "ja": "音が消える瞬間を、視覚のグラデーションとして翻訳した記録。",
+      "en": "Translating the moment sound disappears into visual gradation.",
+      "zh": "将声音消失的瞬间转译为可见的渐层。"
     },
     "description": {
       "ja": [
         "同一空間を時間帯ごとに撮影し、温度差と色温度の変化を比較。",
-        "静止画と短尺映像を組み合わせ、鑑賞のテンポを設計しました。"
+        "静止画と短尺映像を組み合わせ、鑑賞テンポを設計しました。"
       ],
       "en": [
-        "The same space was captured across time windows to compare tonal shifts.",
+        "The same space was captured at different times to compare tonal shifts.",
         "Stills and short-form motion were paired to control viewing tempo."
       ],
       "zh": [
-        "我们在同一空间的不同时段持续拍摄，对比色温与环境温度带来的层次差异。",
-        "通过静帧与短视频的并置，控制观者的观看节奏与停留时长。"
+        "在同一空间跨时段拍摄，对比色温与环境温差变化。",
+        "静帧与短视频并置，控制观看节奏。"
       ]
     },
     "images": [
-      "https://images.unsplash.com/photo-1516939884455-1445c8652f83",
-      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e",
-      "https://images.unsplash.com/photo-1449156003053-c30670b96835"
+      "https://picsum.photos/seed/echoed-void-1/2000/2600",
+      "https://picsum.photos/seed/echoed-void-2/2000/2600",
+      "https://picsum.photos/seed/echoed-void-3/2000/2600"
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "quiet-concourse",
+    "year": "2026",
+    "role": {
+      "ja": "撮影監督 / 編集",
+      "en": "Photography Direction / Edit",
+      "zh": "摄影统筹 / 编辑"
+    },
+    "title": {
+      "ja": "静かな回廊",
+      "en": "Quiet Concourse",
+      "zh": "静谧回廊"
+    },
+    "category": {
+      "ja": "インテリア",
+      "en": "Interior",
+      "zh": "室内空间"
+    },
+    "excerpt": {
+      "ja": "直線的な回廊に、微細な反射で奥行きを付与したシリーズ。",
+      "en": "A corridor series using subtle reflections to build depth.",
+      "zh": "用微妙反射在线性走廊中建立纵深感。"
+    },
+    "description": {
+      "ja": [
+        "動線上の視点高を固定し、連続性を重視したフレーミングに統一。",
+        "トーンは低コントラストでまとめ、質感の差のみを立たせました。"
+      ],
+      "en": [
+        "Viewpoint height was fixed along movement paths for continuity.",
+        "Low-contrast grading emphasized texture differences over contrast."
+      ],
+      "zh": [
+        "沿动线固定视高，统一连续镜头语言。",
+        "以低反差调色突出材质差异。"
+      ]
+    },
+    "images": [
+      "https://picsum.photos/seed/quiet-concourse-1/2000/2600",
+      "https://picsum.photos/seed/quiet-concourse-2/2000/2600",
+      "https://picsum.photos/seed/quiet-concourse-3/2000/2600"
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "nocturne-grid",
+    "year": "2025",
+    "role": {
+      "ja": "撮影 / カラー設計",
+      "en": "Photography / Color Design",
+      "zh": "摄影 / 色彩设计"
+    },
+    "title": {
+      "ja": "夜想グリッド",
+      "en": "Nocturne Grid",
+      "zh": "夜色网格"
+    },
+    "category": {
+      "ja": "都市景観",
+      "en": "Cityscape",
+      "zh": "城市景观"
+    },
+    "excerpt": {
+      "ja": "夜の情報量を抑え、光源配置だけで構成した都市観察。",
+      "en": "A city study built from light-source geometry in night scenes.",
+      "zh": "以光源几何关系重构夜间城市信息。"
+    },
+    "description": {
+      "ja": [
+        "露出は暗部優先で統一し、ハイライトの滲みを最小化。",
+        "各カットの色偏差を抑え、連続表示時の一体感を保ちました。"
+      ],
+      "en": [
+        "Exposure was consistently shadow-prioritized to tame highlight bloom.",
+        "Color deviation between frames was minimized for sequence cohesion."
+      ],
+      "zh": [
+        "统一以暗部优先曝光，压制高光溢散。",
+        "控制镜头间色偏，保证序列观看一致性。"
+      ]
+    },
+    "images": [
+      "https://picsum.photos/seed/nocturne-grid-1/2000/2600",
+      "https://picsum.photos/seed/nocturne-grid-2/2000/2600",
+      "https://picsum.photos/seed/nocturne-grid-3/2000/2600"
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "material-breath",
+    "year": "2024",
+    "role": {
+      "ja": "ビジュアル設計 / 撮影",
+      "en": "Visual Design / Photography",
+      "zh": "视觉设计 / 摄影"
+    },
+    "title": {
+      "ja": "素材の呼吸",
+      "en": "Material Breath",
+      "zh": "材质呼吸"
+    },
+    "category": {
+      "ja": "テクスチャ研究",
+      "en": "Texture Study",
+      "zh": "材质研究"
+    },
+    "excerpt": {
+      "ja": "紙・金属・石材の表面情報を、同一照明下で比較した実験。",
+      "en": "A controlled study comparing paper, metal, and stone textures.",
+      "zh": "在统一布光条件下比较纸、金属与石材表面信息。"
+    },
+    "description": {
+      "ja": [
+        "距離と角度を固定し、素材差のみが視認される設計にしました。",
+        "レタッチでは粒状感を保持し、過度な平滑化を避けています。"
+      ],
+      "en": [
+        "Distance and angle were fixed so only material differences remained.",
+        "Retouch preserved grain and avoided over-smoothing."
+      ],
+      "zh": [
+        "固定距离与角度，仅让材质差异成为主变量。",
+        "后期保留颗粒，不做过度磨平。"
+      ]
+    },
+    "images": [
+      "https://picsum.photos/seed/material-breath-1/2000/2600",
+      "https://picsum.photos/seed/material-breath-2/2000/2600",
+      "https://picsum.photos/seed/material-breath-3/2000/2600"
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "soft-warehouse",
+    "year": "2023",
+    "role": {
+      "ja": "空間演出 / 撮影",
+      "en": "Spatial Styling / Photography",
+      "zh": "空间陈设 / 摄影"
+    },
+    "title": {
+      "ja": "柔らかな倉庫",
+      "en": "Soft Warehouse",
+      "zh": "柔性仓景"
+    },
+    "category": {
+      "ja": "空間演出",
+      "en": "Spatial Styling",
+      "zh": "空间造景"
+    },
+    "excerpt": {
+      "ja": "工業的な器に柔らかい光を重ね、温度感を反転させたプロジェクト。",
+      "en": "A project that softens industrial volume through warm diffused light.",
+      "zh": "以柔和漫射光重塑工业空间的温度感。"
+    },
+    "description": {
+      "ja": [
+        "硬質素材の占有率を高く保ちつつ、色温度で印象を調整。",
+        "導線終点に最も明るい面を配置し、視線の収束を設計しました。"
+      ],
+      "en": [
+        "Hard materials remained dominant while color temperature shifted mood.",
+        "The brightest plane was placed at path endpoints to guide attention."
+      ],
+      "zh": [
+        "保持硬质材料占比，通过色温调整空间情绪。",
+        "在动线终点放置最亮平面，引导视线收束。"
+      ]
+    },
+    "images": [
+      "https://picsum.photos/seed/soft-warehouse-1/2000/2600",
+      "https://picsum.photos/seed/soft-warehouse-2/2000/2600",
+      "https://picsum.photos/seed/soft-warehouse-3/2000/2600"
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "threshold-silence",
+    "year": "2026",
+    "role": {
+      "ja": "ディレクション / 撮影",
+      "en": "Direction / Photography",
+      "zh": "创意统筹 / 摄影"
+    },
+    "title": {
+      "ja": "閾値の静けさ",
+      "en": "Threshold Silence",
+      "zh": "阈值静境"
+    },
+    "category": {
+      "ja": "展示記録",
+      "en": "Exhibition",
+      "zh": "展览记录"
+    },
+    "excerpt": {
+      "ja": "明暗の境界線だけを主題に、展示導線を再撮影した記録。",
+      "en": "An exhibition record focused solely on the threshold between light and dark.",
+      "zh": "围绕明暗边界重拍展览动线的记录。"
+    },
+    "description": {
+      "ja": [
+        "光の切り替わり位置を基準にカメラ位置を再定義しました。",
+        "鑑賞者の歩行速度を想定し、画面遷移のテンポを整えています。"
+      ],
+      "en": [
+        "Camera positions were rebuilt around lighting transition points.",
+        "Frame tempo was tuned to match expected visitor walking pace."
+      ],
+      "zh": [
+        "以光线切换点重新定义机位。",
+        "按观众步行节奏调整画面过渡速度。"
+      ]
+    },
+    "images": [
+      "https://picsum.photos/seed/threshold-silence-1/2000/2600",
+      "https://picsum.photos/seed/threshold-silence-2/2000/2600",
+      "https://picsum.photos/seed/threshold-silence-3/2000/2600"
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "monochrome-transit",
+    "year": "2025",
+    "role": {
+      "ja": "撮影 / グレーディング",
+      "en": "Photography / Grading",
+      "zh": "摄影 / 调色"
+    },
+    "title": {
+      "ja": "単色トランジット",
+      "en": "Monochrome Transit",
+      "zh": "单色过渡"
+    },
+    "category": {
+      "ja": "モノクローム",
+      "en": "Monochrome",
+      "zh": "黑白叙事"
+    },
+    "excerpt": {
+      "ja": "彩度を極端に抑え、移動中の光変化だけを可視化したシリーズ。",
+      "en": "A near-monochrome sequence visualizing light changes during transit.",
+      "zh": "低饱和处理下强调移动过程中的光线变化。"
+    },
+    "description": {
+      "ja": [
+        "被写体よりも光の推移を主役に据えたカット設計。",
+        "仕上げでは中間調を厚く取り、ノイズを質感として残しました。"
+      ],
+      "en": [
+        "Frames were designed to prioritize light progression over subjects.",
+        "Mid-tones were preserved and noise retained as texture."
+      ],
+      "zh": [
+        "镜头设计以光线演变为主角而非主体对象。",
+        "保留中间调密度，并将噪点作为质感保留。"
+      ]
+    },
+    "images": [
+      "https://picsum.photos/seed/monochrome-transit-1/2000/2600",
+      "https://picsum.photos/seed/monochrome-transit-2/2000/2600",
+      "https://picsum.photos/seed/monochrome-transit-3/2000/2600"
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "coastal-archive",
+    "year": "2024",
+    "role": {
+      "ja": "撮影 / アーカイブ編集",
+      "en": "Photography / Archive Edit",
+      "zh": "摄影 / 档案编辑"
+    },
+    "title": {
+      "ja": "海辺の記録",
+      "en": "Coastal Archive",
+      "zh": "海岸档案"
+    },
+    "category": {
+      "ja": "ランドスケープ",
+      "en": "Landscape",
+      "zh": "景观影像"
+    },
+    "excerpt": {
+      "ja": "海沿いの人工物と自然光の境界を、静かな粒度で採集した記録。",
+      "en": "A calm archive of coastal structures and natural light boundaries.",
+      "zh": "安静记录海岸人工结构与自然光边界。"
+    },
+    "description": {
+      "ja": [
+        "風速と潮位を記録しながら、同一地点を複数回撮影。",
+        "比較閲覧しやすいよう、構図の基準点を固定しています。"
+      ],
+      "en": [
+        "The same points were captured repeatedly with wind and tide logs.",
+        "Reference points were fixed for easier comparative viewing."
+      ],
+      "zh": [
+        "结合风速与潮位记录，对同一地点进行多轮拍摄。",
+        "固定构图基准点以便横向比较。"
+      ]
+    },
+    "images": [
+      "https://picsum.photos/seed/coastal-archive-1/2000/2600",
+      "https://picsum.photos/seed/coastal-archive-2/2000/2600",
+      "https://picsum.photos/seed/coastal-archive-3/2000/2600"
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "glass-afterglow",
+    "year": "2023",
+    "role": {
+      "ja": "撮影 / 仕上げ設計",
+      "en": "Photography / Finish Design",
+      "zh": "摄影 / 成片设计"
+    },
+    "title": {
+      "ja": "硝子の残光",
+      "en": "Glass Afterglow",
+      "zh": "玻璃余晖"
+    },
+    "category": {
+      "ja": "商業空間",
+      "en": "Commercial Space",
+      "zh": "商业空间"
+    },
+    "excerpt": {
+      "ja": "ガラス面に残る反射の余韻を軸に、夜間空間の密度を再定義。",
+      "en": "A night-space study centered on residual reflections on glass surfaces.",
+      "zh": "以玻璃残留反射为轴重定义夜间空间密度。"
+    },
+    "description": {
+      "ja": [
+        "反射の多いエリアでは偏光管理を行い、情報過多を抑制。",
+        "最後は白黒トーンに寄せ、空間の構造線を強調しました。"
+      ],
+      "en": [
+        "Polarization control reduced visual overload in reflective zones.",
+        "Final grading leaned monochrome to emphasize structural lines."
+      ],
+      "zh": [
+        "在高反射区域加入偏振控制，避免信息过载。",
+        "最终调色偏向黑白，突出空间结构线。"
+      ]
+    },
+    "images": [
+      "https://picsum.photos/seed/glass-afterglow-1/2000/2600",
+      "https://picsum.photos/seed/glass-afterglow-2/2000/2600",
+      "https://picsum.photos/seed/glass-afterglow-3/2000/2600"
     ]
   }
 ]

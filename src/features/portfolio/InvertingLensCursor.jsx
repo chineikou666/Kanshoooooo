@@ -32,30 +32,37 @@ export function InvertingLensCursor({ isHovered }) {
 
   return (
     <motion.div
-      className="pointer-events-none fixed left-0 top-0 z-[999] flex items-center justify-center rounded-full"
+      className="pointer-events-none fixed left-0 top-0 z-[9999]"
       style={{
         x: smoothX,
         y: smoothY,
-        translateX: '-50%',
-        translateY: '-50%',
         mixBlendMode: 'difference',
-        backgroundColor: '#FFFFFF',
-        opacity: 1,
         willChange: 'transform',
       }}
-      animate={{
-        width: isHovered ? 120 : 15,
-        height: isHovered ? 120 : 15,
-      }}
-      transition={{ type: 'spring', ...springConfig }}
     >
+      <motion.div
+        className="absolute rounded-full bg-white"
+        style={{
+          width: 15,
+          height: 15,
+          x: '-50%',
+          y: '-50%',
+        }}
+        animate={{
+          scale: isHovered ? 8 : 1,
+        }}
+        transition={{ type: 'spring', ...springConfig }}
+      />
+
       <AnimatePresence>
         {isHovered && (
           <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="text-[11px] font-medium tracking-[0.3em] text-black"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+            style={{ x: '-50%', y: '-50%' }}
+            className="absolute whitespace-nowrap text-[11px] font-medium tracking-[0.3em] text-black"
+            transition={{ duration: 0.2 }}
           >
             VIEW
           </motion.span>

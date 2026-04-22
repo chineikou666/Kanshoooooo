@@ -1,4 +1,4 @@
-import { AnimatePresence, motion, useAnimationFrame, useMotionValue } from 'framer-motion'
+import { AnimatePresence, motion, useAnimationFrame, useMotionValue, useMotionValueEvent } from 'framer-motion'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import projects from '../../content/projects.json'
 import siteContent from '../../content/siteContent.json'
@@ -45,6 +45,23 @@ const toCoverImage = (baseUrl) => {
   return url.toString()
 }
 
+const coverWidths = [480, 720, 960, 1280, 1600, 1920]
+const COVER_FALLBACK_IMAGE =
+  'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%25" stop-color="%23141414"/><stop offset="100%25" stop-color="%23242424"/></linearGradient></defs><rect width="1200" height="1600" fill="url(%23g)"/></svg>'
+
+const toCoverSrcSet = (baseUrl, format) =>
+  coverWidths
+    .map((width) => {
+      const url = new URL(baseUrl)
+      url.searchParams.set('auto', 'format')
+      url.searchParams.set('fit', 'crop')
+      url.searchParams.set('q', '80')
+      url.searchParams.set('w', String(width))
+      if (format) url.searchParams.set('fm', format)
+      return `${url.toString()} ${width}w`
+    })
+    .join(', ')
+
 function LanguageSwitcher({ lang, onChange }) {
   const options = [
     { code: 'ja', label: '日本語' },
@@ -74,6 +91,8 @@ function LanguageSwitcher({ lang, onChange }) {
 function HomePage({ lang, text, onLanguageChange, onOpenProject }) {
   const [hoveredIndex, setHoveredIndex] = useState(null)
   const [coversReady, setCoversReady] = useState(false)
+  const [centerCardIndex, setCenterCardIndex] = useState(0)
+  const [preloadRadius, setPreloadRadius] = useState(6)
   const REPEAT_SETS = 3
   const MIDDLE_SET_INDEX = 1
   const cardBaseW = 266
@@ -85,15 +104,42 @@ function HomePage({ lang, text, onLanguageChange, onOpenProject }) {
   const x = useMotionValue(-(setW * MIDDLE_SET_INDEX))
   const velocity = useRef(0)
   const isInEdgeZone = useRef(false)
+  const cardRefs = useRef([])
+  const totalCards = items.length
+  const [ioReadyIndices, setIoReadyIndices] = useState(() => new Set())
 
   const DAMPING = 0.94
   const STOP_THRESHOLD = 0.01
-  const BASE_DRIFT = 0.18
+  const BASE_DRIFT = 0.06
 
   const coverMap = useMemo(
     () => Object.fromEntries(projects.map((project) => [project.slug, toCoverImage(project.images[0])])),
     []
   )
+  const coverSrcSetMap = useMemo(
+    () =>
+      Object.fromEntries(
+        projects.map((project) => [
+          project.slug,
+          {
+            avif: toCoverSrcSet(project.images[0], 'avif'),
+            webp: toCoverSrcSet(project.images[0], 'webp'),
+            fallback: toCoverSrcSet(project.images[0]),
+          },
+        ])
+      ),
+    []
+  )
+
+  useEffect(() => {
+    const updateRadius = () => {
+      const cardsInView = Math.ceil(window.innerWidth / (cardBaseW + gap))
+      setPreloadRadius(Math.max(6, cardsInView + 2))
+    }
+    updateRadius()
+    window.addEventListener('resize', updateRadius)
+    return () => window.removeEventListener('resize', updateRadius)
+  }, [])
 
   useEffect(() => {
     let disposed = false
@@ -120,6 +166,45 @@ function HomePage({ lang, text, onLanguageChange, onOpenProject }) {
     }
   }, [coverMap])
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        setIoReadyIndices((prev) => {
+          const next = new Set(prev)
+          let changed = false
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return
+            const idx = Number(entry.target.dataset.cardIndex)
+            if (!Number.isNaN(idx) && !next.has(idx)) {
+              next.add(idx)
+              changed = true
+            }
+          })
+          return changed ? next : prev
+        })
+      },
+      {
+        root: null,
+        rootMargin: '0px 1000px 0px 0px',
+        threshold: 0.01,
+      }
+    )
+
+    cardRefs.current.forEach((node) => {
+      if (node) observer.observe(node)
+    })
+
+    return () => observer.disconnect()
+  }, [items.length])
+
+  useMotionValueEvent(x, 'change', (latest) => {
+    const viewportCenter = window.innerWidth * 0.5
+    const pitch = cardBaseW + gap
+    const rawIndex = Math.round((viewportCenter - latest) / pitch)
+    const wrappedIndex = ((rawIndex % totalCards) + totalCards) % totalCards
+    setCenterCardIndex((prev) => (prev === wrappedIndex ? prev : wrappedIndex))
+  })
+
   useAnimationFrame(() => {
     if (!coversReady) return
     if (hoveredIndex !== null) return
@@ -141,7 +226,7 @@ function HomePage({ lang, text, onLanguageChange, onOpenProject }) {
       <style>{`canvas, body { cursor: none !important; }`}</style>
 
       <header className="fixed left-0 top-0 z-40 w-full">
-        <div className="mx-auto flex max-w-6xl flex-col items-center pb-12 pt-10">
+        <div className="flex w-full flex-col items-start pb-8 pl-8 pr-32 pt-10 md:pl-12">
           <h1 className="text-[34px] font-light tracking-[0.52em] text-white/90 md:text-[40px]">HAS.WORKS</h1>
           <nav aria-label="Primary" className="mt-7 flex gap-8 text-[10px] tracking-[0.36em] text-white/50 md:gap-12">
             {text.nav.map((item) => (
@@ -178,25 +263,33 @@ function HomePage({ lang, text, onLanguageChange, onOpenProject }) {
           const edge = iw * 0.2
           if (e.clientX < edge) {
             isInEdgeZone.current = true
-            velocity.current = (edge - e.clientX) * 0.035
+            velocity.current = (edge - e.clientX) * 0.0117
           } else if (e.clientX > iw - edge) {
             isInEdgeZone.current = true
-            velocity.current = (iw - edge - e.clientX) * 0.035
+            velocity.current = (iw - edge - e.clientX) * 0.0117
           } else {
             isInEdgeZone.current = false
           }
         }}
       >
         <motion.div
-          style={{ x, transition: 'none', transform: 'translate3d(0,0,0)' }}
+          style={{ x, transform: 'translate3d(0,0,0)' }}
           className="flex will-change-transform [backface-visibility:hidden]"
         >
           {items.map((project, i) => {
             const active = hoveredIndex === i
+            const distanceFromCenter = Math.abs(i - centerCardIndex)
+            const mirroredDistance = Math.min(distanceFromCenter, totalCards - distanceFromCenter)
+            const isNearViewport = mirroredDistance <= preloadRadius
+            const shouldLoadNow = isNearViewport || ioReadyIndices.has(i)
             return (
               <motion.button
                 key={`${project.id}-${i}`}
                 type="button"
+                ref={(node) => {
+                  cardRefs.current[i] = node
+                }}
+                data-card-index={i}
                 onMouseEnter={() => setHoveredIndex(i)}
                 onMouseLeave={() => setHoveredIndex(null)}
                 onClick={() => onOpenProject(project.slug)}
@@ -211,22 +304,36 @@ function HomePage({ lang, text, onLanguageChange, onOpenProject }) {
                 animate={{
                   width: active ? cardExpW : cardBaseW,
                   zIndex: active ? 20 : 1,
-                  filter: active ? 'grayscale(0%)' : 'grayscale(100%)',
                 }}
                 transition={{ type: 'spring', stiffness: 150, damping: 45 }}
               >
                 {coversReady ? (
-                  <img
-                    src={coverMap[project.slug]}
-                    alt={`${project.title[lang]} cover`}
-                    className="h-full w-full object-cover"
-                    loading="eager"
-                    decoding="sync"
-                    fetchPriority="high"
-                    referrerPolicy="no-referrer"
-                    draggable="false"
-                    style={{ transform: 'translate3d(0,0,0)', backfaceVisibility: 'hidden' }}
-                  />
+                  <picture>
+                    <source type="image/avif" srcSet={coverSrcSetMap[project.slug].avif} sizes="(max-width: 768px) 72vw, 533px" />
+                    <source type="image/webp" srcSet={coverSrcSetMap[project.slug].webp} sizes="(max-width: 768px) 72vw, 533px" />
+                    <img
+                      src={coverMap[project.slug]}
+                      srcSet={coverSrcSetMap[project.slug].fallback}
+                      sizes="(max-width: 768px) 72vw, 533px"
+                      alt={`${project.title[lang]} cover`}
+                      className={`h-full w-full object-cover transition-opacity duration-300 ${active ? 'opacity-100' : 'opacity-90'}`}
+                      loading={shouldLoadNow ? 'eager' : 'lazy'}
+                      decoding="async"
+                      fetchPriority={isNearViewport ? 'high' : 'auto'}
+                      referrerPolicy="no-referrer"
+                      draggable="false"
+                      onError={(event) => {
+                        const img = event.currentTarget
+                        const picture = img.closest('picture')
+                        picture?.querySelectorAll('source').forEach((source) => {
+                          source.srcset = ''
+                        })
+                        img.srcset = ''
+                        img.src = COVER_FALLBACK_IMAGE
+                      }}
+                      style={{ transform: 'translate3d(0,0,0)', backfaceVisibility: 'hidden', contain: 'paint' }}
+                    />
+                  </picture>
                 ) : (
                   <div className="h-full w-full animate-pulse bg-gradient-to-br from-zinc-800 to-zinc-900" />
                 )}
